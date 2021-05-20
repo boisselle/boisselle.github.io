@@ -1,5 +1,5 @@
 html {
-  background-color: DarkSlateBlue;
+  background-color: #fefbd8;
 }
 
 .placeholder {
@@ -9,13 +9,13 @@ html {
 
 h1 {
   font-weight: bold;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: SkyBlue;
+  font-size: 100px;
+  font-family: "Major Mono Display", monospace;
+  color: #36486b;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  color: SteelBlue;
+  font-family: "Major Mono Display", monospace;
+  font-size: 33px;
+  color: 4040a1;
 }
