@@ -3,13 +3,13 @@ html {
 }
 
 .placeholder-fade-in {
-  padding: 100px 0;
+  padding: 222px 0;
   text-align: center;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 100px;
+  font-size: 60px;
   font-family: "Major Mono Display", monospace;
   color: #36486b;
   animation: fadeIn linear 1s;
@@ -21,8 +21,8 @@ h1 {
 
 p {
   font-family: "Major Mono Display", monospace;
-  font-size: 33px;
-  color: #4040a1;
+  font-size: 20px;
+  color: darkturquoise;
   animation: fadeIn linear 3s;
   -webkit-animation: fadeIn linear 3s;
   -moz-animation: fadeIn linear 3s;
