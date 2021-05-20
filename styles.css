@@ -9,8 +9,8 @@ html {
 
 h1 {
   font-weight: bold;
-  font-size: 60px;
-  font-family: "Press Start 2P", cursive;
+  font-size: 90px;
+  font-family: "Black Ops One", cursive;
   color: #36486b;
   animation: fadeIn linear 1s;
   -webkit-animation: fadeIn linear 1s;
@@ -21,7 +21,7 @@ h1 {
 
 p {
   font-family: "Lobster", cursive;
-  font-size: 20px;
+  font-size: 45px;
   color: darkturquoise;
   animation: fadeIn linear 3s;
   -webkit-animation: fadeIn linear 3s;
