@@ -2,7 +2,7 @@ html {
   background-color: #fefbd8;
 }
 
-.placeholder {
+.placeholder-fade-in {
   padding: 100px 0;
   text-align: center;
 }
@@ -12,10 +12,65 @@ h1 {
   font-size: 100px;
   font-family: "Major Mono Display", monospace;
   color: #36486b;
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
 }
 
 p {
   font-family: "Major Mono Display", monospace;
   font-size: 33px;
-  color: 4040a1;
+  color: #4040a1;
+  animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
