@@ -19,8 +19,16 @@ const pageTitle = "Home Page";
 		<Header/>
 		<h1>Boisselle's Blog</h1>
 		<Footer />
-		<script src="/scripts/menu.js">
-		</script>
+		<!-- <script src="/scripts/menu.js"> -->
+		<!-- </script> -->
+
+		<!-- In Astro, an empty <script hoist></script> tag can 
+		be used to ensure that any scripts or dependencies that need to 
+		be executed early in the page lifecycle are moved to the <head> 
+		section during the build process, even if the script itself is empty. -->
+		 <script hoist>
+
+		 </script>
 
 	</body>
 </html>
