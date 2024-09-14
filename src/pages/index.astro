@@ -1,5 +1,5 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import "../styles/global.css";
 import Footer from '../components/Footer.astro';
@@ -7,7 +7,7 @@ import Footer from '../components/Footer.astro';
 const pageTitle = "Home Page";
 ---
 
-<html lang="en">
+<!-- <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -19,6 +19,7 @@ const pageTitle = "Home Page";
 		<Header/>
 		<h1>Boisselle's Blog</h1>
 		<Footer />
+
 		<!-- <script src="/scripts/menu.js"> -->
 		<!-- </script> -->
 
@@ -26,9 +27,15 @@ const pageTitle = "Home Page";
 		be used to ensure that any scripts or dependencies that need to 
 		be executed early in the page lifecycle are moved to the <head> 
 		section during the build process, even if the script itself is empty. -->
-		 <script hoist>
+		 <!-- <script hoist>
 
 		 </script>
 
 	</body>
-</html>
+</html> --> 
+
+
+<BaseLayout pageTitle={pageTitle}>
+  <h1>Boisselle's Blog</h1>
+  <!-- Add any other content specific to the home page here -->
+</BaseLayout>
