@@ -12,23 +12,23 @@ const getPlatformUrl = (platform, username) => {
 };
 ---
 
-<!-- <a href={getPlatformUrl(platform, username)}>{platform}</a> -->
- <!-- <a href="https://x.com/seanboisselle">Twitter / X</a> -->
-
-<!-- <button class="custom-button">
-  <Image 
-  src={xLogo}
-  alt="x logo"
-  width={30}
-  />
-  <span>@seanboisselle</span>
-</button>" -->
-<a href="https://twitter.com/seanboisselle" target="_blank" rel="noopener noreferrer" class="custom-button">
+<!-- <a href="https://twitter.com/seanboisselle" target="_blank" rel="noopener noreferrer" class="custom-button">
   <Image src={xLogo} alt="Twitter / X Icon" width={24} height={24} />
   <span>Let's connect!</span>
-</a>
+</a> -->
 
-<style>
+<!-- <a
+  href="https://twitter.com/seanboisselle"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="custom-button"
+>
+  <Image src={xLogo} alt="Twitter / X Icon" class="x-logo"width={24} height={24} />
+  <Image src={xLogoHover} alt="Twitter / X Icon" class="x-logo-hover" width={24} height={24} />
+  <span>Let's connect!</span>
+</a> -->
+
+<!-- <style>
   a {
     padding: 0.5rem 0.5rem;
     color: white;
@@ -46,11 +46,89 @@ const getPlatformUrl = (platform, username) => {
     cursor: pointer;
     text-decoration: none;
     font-size: 16px;
-    outline: 2px solid; /* Add an invisible outline */
-
+    outline: 2px solid; 
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
+
+  .custom-button:hover {
+    background-color: black;
+    color: #FFDD00;
+  }
+
+  .custom-button span {
+    transition: color 0.3s ease;
+}
 
   .custom-button img {
     margin-right: 10px;
+  }
+
+  .x-logo,
+  .x-logo-hover {
+    transition: opacity 0.3s ease;
+  }
+
+  .x-logo-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  .custom-button:hover .x-logo {
+    opacity: 0;
+  }
+
+  .custom-button:hover .x-logo-hover {
+    opacity: 1;
+  }
+</style> -->
+
+<a
+  href="https://twitter.com/seanboisselle"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="custom-button"
+>
+  <Image src={xLogo} alt="Twitter / X Icon" class="x-logo" width={24} height={24} />
+  <Image src={xLogoHover} alt="Twitter / X Icon" class="x-logo-hover" width={24} height={24} />
+  <span>Let's connect!</span>
+</a>
+
+<style>
+
+  .custom-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: initial;
+    text-decoration: none;
+    border: 2px solid black; /* Add a black outline */
+    border-radius: 8px;      /* Make the button rounded */
+  }
+
+  .custom-button .x-logo-hover {
+    display: none;
+  }
+
+  .custom-button:hover {
+    background-color: black;
+  }
+
+  .custom-button:hover span {
+    color: #FFDD77;
+  }
+
+  .custom-button:hover .x-logo {
+    display: none;
+  }
+
+  .custom-button:hover .x-logo-hover {
+    display: inline;
+  }
+
+  .custom-button .x-logo,
+  .custom-button .x-logo-hover {
+    margin-right: 8px; /* Adjust the value as needed */
   }
 </style>
