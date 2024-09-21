@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import xLogo from "../../public/images/logo-black.png";
+import xLogoHover from "../../public/images/logo-yellow.png";
 const { platform, username } = Astro.props;
 
 const getPlatformUrl = (platform, username) => {
@@ -9,13 +12,45 @@ const getPlatformUrl = (platform, username) => {
 };
 ---
 
-<a href={getPlatformUrl(platform, username)}>{platform}</a>
+<!-- <a href={getPlatformUrl(platform, username)}>{platform}</a> -->
+ <!-- <a href="https://x.com/seanboisselle">Twitter / X</a> -->
+
+<!-- <button class="custom-button">
+  <Image 
+  src={xLogo}
+  alt="x logo"
+  width={30}
+  />
+  <span>@seanboisselle</span>
+</button>" -->
+<a href="https://twitter.com/seanboisselle" target="_blank" rel="noopener noreferrer" class="custom-button">
+  <Image src={xLogo} alt="Twitter / X Icon" width={24} height={24} />
+  <span>Let's connect!</span>
+</a>
 
 <style>
   a {
     padding: 0.5rem 0.5rem;
     color: white;
-    background-color: #333;;
+
     text-decoration: none;
+  }
+
+  .custom-button {
+    display: inline-flex;
+    align-items: center;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    outline: 2px solid; /* Add an invisible outline */
+
+  }
+
+  .custom-button img {
+    margin-right: 10px;
   }
 </style>

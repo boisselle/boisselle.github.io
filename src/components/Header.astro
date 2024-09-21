@@ -3,6 +3,9 @@
 import Hamburger from './Hamburger.astro';
 ---
 <header>
+    <div class="header-left">
+        <span class="header-title">boisselle</span> <!-- Your text on the left -->
+    </div>
     <nav>
         <Hamburger />
         <div class="overlay">
@@ -43,19 +46,45 @@ import Hamburger from './Hamburger.astro';
 </script>
 
 <style>
-    header {
+    /* header {
         padding: 1rem;
         background-color: #f4f4f4;
+    } */
+    header {
+        display: flex;
+        justify-content: space-between; /* Space between the text and the nav */
+        align-items: center; /* Vertically aligns the content */
+        /* padding: 10px; */
+        background-color: #F0D000;
+        border-bottom: 2px solid black;
+        margin-bottom: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
     }
 
-    nav {
-        display: flex;
+    /* nav {
+        display: flex; */
         /* justify-content: space-between;
         align-items: center; */
-        justify-content: flex-end;
+        /* justify-content: flex-end;
         padding-right: 1rem;
+    } */
+
+    nav {
+    display: flex;
+        align-items: center;
     }
 
+    .header-left {
+        flex: 1; /* Ensures the text stays on the left side */
+    }
+
+    .header-title {
+        font-size: 1.5rem; /* Adjust size as needed */
+        font-weight: bold;
+        color: black; /* Text color */
+    }
+    
     .overlay {
         display: flex;
         position: fixed;
@@ -86,20 +115,24 @@ import Hamburger from './Hamburger.astro';
         padding: 0;
     }
 
+    .inactive {
+        color: #999;
+    }
+
     .overlay li {
         margin: 20px 0;
         text-align: center;
     }
 
     .overlay a {
-        color: white;
+        color: #ffd700;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 45px;
         transition: color 0.3s ease;
     }
 
     .overlay a:hover {
-        color: #ddd;
+        color: #ffd700;
     }
 
     .desktop-menu {
@@ -129,12 +162,19 @@ import Hamburger from './Hamburger.astro';
         .desktop-menu a {
             color: #333;
             text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s ease;
+            font-size: 18px;
+            padding: 5px 10px; /* Add padding to keep the size consistent */
+            border-radius: 10px; /* Keep the box rounded in the normal state */
+            background-color: transparent; /* Make the background transparent by default */
+            transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
         }
 
         .desktop-menu a:hover {
-            color: #666;
+            color: #FFDD00; /* Changes text color to yellow on hover */
+            background-color: black; /* Adds black background on hover */
+
+            padding: 10px 10px; /* Adds padding inside the box */
+            border-radius: 8px; /* Rounds the corners of the box */
         }
     }
 </style>
