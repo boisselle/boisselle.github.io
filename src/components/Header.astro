@@ -52,23 +52,15 @@ import Hamburger from './Hamburger.astro';
     } */
     header {
         display: flex;
-        justify-content: space-between; /* Space between the text and the nav */
-        align-items: center; /* Vertically aligns the content */
+        justify-content: space-between; 
+        align-items: center; 
         /* padding: 10px; */
         background-color: #F0D000;
         border-bottom: 2px solid black;
         margin-bottom: 2rem;
         padding-top: 1.5rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 1rem;
     }
-
-    /* nav {
-        display: flex; */
-        /* justify-content: space-between;
-        align-items: center; */
-        /* justify-content: flex-end;
-        padding-right: 1rem;
-    } */
 
     nav {
     display: flex;
@@ -76,13 +68,13 @@ import Hamburger from './Hamburger.astro';
     }
 
     .header-left {
-        flex: 1; /* Ensures the text stays on the left side */
+        flex: 1; 
     }
 
     .header-title {
-        font-size: 1.5rem; /* Adjust size as needed */
+        font-size: 1.5rem; 
         font-weight: bold;
-        color: black; /* Text color */
+        color: black; 
     }
     
     .overlay {
@@ -98,7 +90,7 @@ import Hamburger from './Hamburger.astro';
         align-items: center;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
     }
 
     .overlay.show {
@@ -120,19 +112,35 @@ import Hamburger from './Hamburger.astro';
     }
 
     .overlay li {
-        margin: 20px 0;
+        flex: 1;
+        margin: 20px 0px;
         text-align: center;
     }
 
     .overlay a {
+        flex: 1;
+        display: inline-block;
+        width: 150px;
         color: #ffd700;
         text-decoration: none;
-        font-size: 45px;
+        font-size: 30px;
         transition: color 0.3s ease;
+        border: 2px solid #ffd700;;
+        border-radius: 8px; 
+        padding: 10px 20px;
+        background-color: transparent; 
+        transition: color 0.2s ease, background-color 0.2s ease, border-radius 0.2s ease;
+        touch-action: manipulation;
     }
 
     .overlay a:hover {
-        color: #ffd700;
+        color: #111;
+        background-color: #ffd700;
+    }
+
+    .overlay a:active {
+        color: #111;
+        background-color: #ffd700;
     }
 
     .desktop-menu {
@@ -162,19 +170,21 @@ import Hamburger from './Hamburger.astro';
         .desktop-menu a {
             color: #333;
             text-decoration: none;
-            font-size: 18px;
-            padding: 5px 10px; /* Add padding to keep the size consistent */
-            border-radius: 10px; /* Keep the box rounded in the normal state */
-            background-color: transparent; /* Make the background transparent by default */
-            transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+            /* text-underline-offset: 10px; */
+            font-size: 16px;
+            padding: 7px 14px; 
+            border: 2px solid black;
+            border-radius: 8px; 
+            background-color: transparent; 
+            transition: color 0.2s ease, background-color 0.2s ease, border-radius 0.2s ease;
         }
 
         .desktop-menu a:hover {
-            color: #FFDD00; /* Changes text color to yellow on hover */
-            background-color: black; /* Adds black background on hover */
+            color: #FFD700; 
+            background-color: black; 
 
-            padding: 10px 10px; /* Adds padding inside the box */
-            border-radius: 8px; /* Rounds the corners of the box */
+            /* padding: 10px 10px;  */
+            /* border-radius: 8px;  */
         }
     }
 </style>

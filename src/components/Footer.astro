@@ -2,13 +2,23 @@
 import Social from './Social.astro';
 ---
 <style>
+
     footer {
       display: flex;
       gap: 1rem;
-      margin-top: 2rem;
-      justify-content: center;
+      margin-top: 1rem;
+      justify-content: left;
+    }
+
+    .divider {
+      width: 100%;
+      height: 2px;
+      background-color: black; /* Color of the line */
+    margin: 10px 0; /* Spacing around the line */
     }
 </style>
+
+<div class="divider"></div>
 
 <footer>
     <Social platform="twitter" username="seanboisselle" />

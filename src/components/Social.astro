@@ -1,7 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import xLogo from "../../public/images/logo-black.png";
-import xLogoHover from "../../public/images/logo-yellow.png";
+import Icon from '../components/Icon.astro';
+// import xLogo from "/images/logo-black.png";
+// import xLogoHover from "/images/logo-yellow.png";
 const { platform, username } = Astro.props;
 
 const getPlatformUrl = (platform, username) => {
@@ -11,80 +12,20 @@ const getPlatformUrl = (platform, username) => {
   return `https://www.${platform}.com/${username}`;
 };
 ---
-
-<!-- <a href="https://twitter.com/seanboisselle" target="_blank" rel="noopener noreferrer" class="custom-button">
-  <Image src={xLogo} alt="Twitter / X Icon" width={24} height={24} />
-  <span>Let's connect!</span>
-</a> -->
-
+<main>
+  <p>Let's connect!</p>
+  <Icon
+    normalImage="/images/logo-black.png"
+    hoverImage="/images/logo-yellow.png"
+    alt="X Logo"
+  />
+  <Icon 
+    normalImage="/images/github-mark.png"
+    hoverImage="/images/github-yellow.png"
+    alt="Github Logo"
+  />
+</main>
 <!-- <a
-  href="https://twitter.com/seanboisselle"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="custom-button"
->
-  <Image src={xLogo} alt="Twitter / X Icon" class="x-logo"width={24} height={24} />
-  <Image src={xLogoHover} alt="Twitter / X Icon" class="x-logo-hover" width={24} height={24} />
-  <span>Let's connect!</span>
-</a> -->
-
-<!-- <style>
-  a {
-    padding: 0.5rem 0.5rem;
-    color: white;
-
-    text-decoration: none;
-  }
-
-  .custom-button {
-    display: inline-flex;
-    align-items: center;
-    color: black;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 15px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
-    outline: 2px solid; 
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .custom-button:hover {
-    background-color: black;
-    color: #FFDD00;
-  }
-
-  .custom-button span {
-    transition: color 0.3s ease;
-}
-
-  .custom-button img {
-    margin-right: 10px;
-  }
-
-  .x-logo,
-  .x-logo-hover {
-    transition: opacity 0.3s ease;
-  }
-
-  .x-logo-hover {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-  }
-
-  .custom-button:hover .x-logo {
-    opacity: 0;
-  }
-
-  .custom-button:hover .x-logo-hover {
-    opacity: 1;
-  }
-</style> -->
-
-<a
   href="https://twitter.com/seanboisselle"
   target="_blank"
   rel="noopener noreferrer"
@@ -131,4 +72,4 @@ const getPlatformUrl = (platform, username) => {
   .custom-button .x-logo-hover {
     margin-right: 8px; /* Adjust the value as needed */
   }
-</style>
+</style> -->

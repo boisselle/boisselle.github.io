@@ -1,0 +1,33 @@
+---
+const { date, title, description, link } = Astro.props;
+---
+<div class="blog-post-link">
+  <div class="date">{date}</div>
+  <div class="title">
+    <a href={link}>{title}</a>
+  </div>
+  <div class="description">{description}</div>
+</div>
+
+<style>
+  .blog-post-link {
+    max-width: 450px;
+  }
+  .blog-post-link .date {
+    color: darkblue;
+    font-size: 12px;
+  }
+  .blog-post-link .title a {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .blog-post-link .title a:hover {
+    text-decoration: underline;
+  }
+  .blog-post-link .description {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+</style>
