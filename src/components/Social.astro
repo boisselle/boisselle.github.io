@@ -12,6 +12,17 @@ const getPlatformUrl = (platform, username) => {
   return `https://www.${platform}.com/${username}`;
 };
 ---
+<style>
+  main {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  p {
+    margin-top: 0;
+    padding-top: 0;
+  }
+</style>
+
 <main>
   <p>Let's connect!</p>
   <Icon
@@ -25,51 +36,3 @@ const getPlatformUrl = (platform, username) => {
     alt="Github Logo"
   />
 </main>
-<!-- <a
-  href="https://twitter.com/seanboisselle"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="custom-button"
->
-  <Image src={xLogo} alt="Twitter / X Icon" class="x-logo" width={24} height={24} />
-  <Image src={xLogoHover} alt="Twitter / X Icon" class="x-logo-hover" width={24} height={24} />
-  <span>Let's connect!</span>
-</a>
-
-<style>
-
-  .custom-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 12px;
-    background-color: initial;
-    text-decoration: none;
-    border: 2px solid black; /* Add a black outline */
-    border-radius: 8px;      /* Make the button rounded */
-  }
-
-  .custom-button .x-logo-hover {
-    display: none;
-  }
-
-  .custom-button:hover {
-    background-color: black;
-  }
-
-  .custom-button:hover span {
-    color: #FFDD77;
-  }
-
-  .custom-button:hover .x-logo {
-    display: none;
-  }
-
-  .custom-button:hover .x-logo-hover {
-    display: inline;
-  }
-
-  .custom-button .x-logo,
-  .custom-button .x-logo-hover {
-    margin-right: 8px; /* Adjust the value as needed */
-  }
-</style> -->
