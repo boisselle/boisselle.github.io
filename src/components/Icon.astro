@@ -18,6 +18,7 @@ const { normalImage, hoverImage } = Astro.props;
   position: relative; /* Set as the positioning reference */
   width: 50px; 
   height: 50px;
+  cursor: pointer;
 }
 
 .logo {
@@ -44,6 +45,15 @@ const { normalImage, hoverImage } = Astro.props;
 
 .icon-box:hover {
   background-color: black; /* Black background on hover */
+
+}
+
+.icon-box:hover .logo.hover {
+  opacity: 1; /* Show hover logo on hover */
+}
+
+.icon-box:hover .logo.normal {
+  opacity: 0; /* Hide normal logo on hover */
 }
 
 </style>
