@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets';
-const { normalImage, hoverImage } = Astro.props;
+const { normalImage, hoverImage, link } = Astro.props;
 ---
 
 <!-- <div class="icon-box">
   <img src={normalImage} alt="Normal Logo" class="logo normal" />
   <img src={hoverImage} alt="Hover Logo" class="logo hover" />
 </div> -->
-<div class="icon-box">
+<a href={link} class="icon-box" target="_blank" rel="noopener noreferrer">
   <Image
     src={normalImage}
     alt="Normal Logo"
@@ -37,6 +37,7 @@ const { normalImage, hoverImage } = Astro.props;
   width: 50px; 
   height: 50px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .logo {
