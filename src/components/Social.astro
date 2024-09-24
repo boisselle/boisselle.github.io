@@ -1,8 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 import Icon from '../components/Icon.astro';
-// import xLogo from "/images/logo-black.png";
-// import xLogoHover from "/images/logo-yellow.png";
+import xLogo from '../assets/images/logo-black.png';
+import xLogoHover from '../assets/images/logo-yellow.png';
+import githubLogo from '../assets/images/github-mark.png';
+import githubLogoHover from '../assets/images/github-yellow.png';
+
 const { platform, username } = Astro.props;
 
 const getPlatformUrl = (platform, username) => {
@@ -26,13 +29,13 @@ const getPlatformUrl = (platform, username) => {
 <main>
   <p>Let's connect!</p>
   <Icon
-    normalImage="/images/logo-black.png"
-    hoverImage="/images/logo-yellow.png"
+    normalImage={xLogo}
+    hoverImage={xLogoHover}
     alt="X Logo"
   />
   <Icon 
-    normalImage="/images/github-mark.png"
-    hoverImage="/images/github-yellow.png"
+    normalImage={githubLogo}
+    hoverImage={githubLogoHover}
     alt="Github Logo"
   />
 </main>
