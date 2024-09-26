@@ -14,23 +14,17 @@ tags: ["astro", "blogging", "learning in public"]
 
 Published on: September 22, 2024
 
-Reading requires a good deal of focus.
+I've been thinking lately about how to improve my reading speed and comprehension. I feel the constant need to optimize my learning. To that end, I'm working to map out and design a system for reading that will help me stay productive and maximize my learning efficiency. 
 
-Choosing what to read seems to be a very important thing. But I find that volume of reading is even more important. You can't fully rely on book reviews to help you choose. 
 
-Mortimer Adler in his book *How to Read a Book* lists 4 different types of reading:
+At minimum, the productivity tracking system should include:
 
-Elementary, Inspectional, Analytical, and Syntopical.
-
-Elementary is the basic type of reading that you go through in grade school. Inspectional is when you start to pick it apart. Analytical is when you start to cross-examine different sections of the book and really break things down. Syntopical brings together a set of books to make comparisons and contrasts and come up with an overall synthesis of them.
-
-I'm trying to map out a system of reading that will help me stay productive, while working toward a certain goal. 
-
-Some elements of a good reading productivity system:
-
-- a page where you can have your books listed
-- a page where you can have your notes attached to each book
+- a page listing books in progress, completed, and wishlist
+- a scheduling component that reminds you of reading time by email or sms.
+- a page/folder system for notes related to each book.
 - a timer that you click when you start and stop reading.
-- a place where you can view all reading sessions related to a book.
-- an overall rating for a book.
-- 
+- a page to view all reading sessions related to a book.
+- an analytics dashboard that tracks progress.
+- a page linking to secondary source material related to the book.
+
+The goal of the minimum viable product is to test a minimal set of features and learn what needs to be changed along the way. I'd also like others to test and use the application if they find it useful. If you'd like to try it, or have suggestions, connect with me and let me know!

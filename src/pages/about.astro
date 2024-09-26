@@ -1,86 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
-// import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 
-const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Sean",
-  country: "United States",
-  occupation: "Programmer",
-  hobbies: ["design", "video editing", "motion graphics"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Flask", "Django", "Writing Docs"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
-
-const skillColor = "pink";
+const pageTitle = "about | boisselle";
 ---
-<BaseLayout pageTitle={pageTitle}>
-    <h1>about "me"</h1>
-    <p>Hi, I'm Sean. </p>
+<BaseLayout title={pageTitle}>
+    <h1>about me</h1>
+    <p>It's pronounced "bwah-zelle." Pardon my French!</p>
+    <p>But you can call me Sean.</p>
+    <p>I'm a software engineer with 3 years of experience specializing in full-stack development, rapid prototyping, and user interface design. <p>I'm passionate about utilizing modern design principles to craft beautiful user experiences.</p>
+        
+        <p>I have a bachelor's degree in Computer Science from the University of Florida. My current tech stack includes React, Next.js, Astro, Tailwind, and Django.</p>
 
-    <p>I'm a software engineer with 3 years of experience, specializing in full-stack development, rapid prototyping, and user interface design.</p>
-    <!-- <p>Welcome to my little corner of the world wide web, formerly known as arpanet.</p>
-    <p>(thanks darpa!)</p> -->
+    <p>I'm also familiarizing myself with the mathematics foundations of machine learning with the help of <a href="https://probml.github.io/pml-book/book1.html" target="_blank">Probabilistic Machine Learning</a> by Kevin Murphy.</p>
+        
+    <p>When I'm not marveling about the beauty of computation and design, I also like to dabble in videography, video editing, and writing.</p>
 
-    <p>I'm passionate about utilizing modern design principles to craft beautiful user experiences.</p>
-    
-    <p>I dabble in film, video editing and machine learning.</p>
-
-    <!-- <p>Subscribe to my newsletter for exclusive stuff.</p> -->
-
-    <!-- <p>I dabble in video production. Find my reel at sean.video</p> -->
     </p>
-    <p>Trying to become better every day, and documenting my progressalong the way.</p>
-    <!-- Add any other content specific to the home page here -->
 </BaseLayout>
-<!-- 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-        <style define:vars={{skillColor}}>
-            h1 {
-              color: purple;
-              font-size: 4rem;
-            }
-            .skill {
-                color: var(--skillColor);
-                font-weight: bold;
-            }
-        </style>
-	</head>
-	<body>
-        <Header />
-		<h1>{pageTitle}</h1>
-        <p>I'm interested in design, coding, and video editing / filmmaking.</p>
-        <p>Here are a few facts about me:</p>
-    <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {identity.hobbies.length >= 2 &&
-        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-    }
-    </ul>
-    <p>My skills are:</p>
-    <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
-
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 1 day.</p>}
-    <Footer />
-    </body>
-</html> -->

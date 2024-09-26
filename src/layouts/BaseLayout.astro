@@ -1,5 +1,5 @@
 ---
-import Header from '../components/Header.astro';  // Adjust paths as necessary
+import Header from '../components/Header.astro'; 
 import Footer from '../components/Footer.astro';
 import Social from '../components/Social.astro';
 const { title } = Astro.props;
@@ -16,20 +16,17 @@ import "../styles/global.css";
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    <!-- <link rel="icon" type="image/png" href="b_logo.png" /> -->
+    <link rel="icon" href="/images/fav.png" />
 
 
   </head>
   <body>
-    <!-- Header Section -->
     <Header />
 
-    <!-- Main Content -->
     <main>
       <slot />
     </main>
 
-    <!-- Footer Section -->
     <Footer />
 
   </body>

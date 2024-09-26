@@ -1,27 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
 import BlogPostLink from '../components/BlogPostLink.astro';
-import Footer from '../components/Footer.astro';
 
-const pageTitle = "Blog";
+const pageTitle = "blog | boisselle";
 ---
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout title={pageTitle}>
 
 	<p>Some of my thoughts, experiments, and case studies</p>
 
 	<BlogPostLink
-	date="September 22, 2024"
+	date="September 25, 2024"
 	title="Tracking Reading Productivity"
 	description="Laying down the specifications for a reading productivity application."
 	link="/tracking-reading-productivity"
 	/>
 
 	<BlogPostLink
-		date="September 22, 2024"
-		title="Obligatory First Post"
+		date="September 24, 2024"
+		title="A Brief Introductory Roadmap"
 		description="There's never an optimal way to first begin. Optimization is a function across instances"
-		link="/first-blog-post"
+		link="/roadmap"
 	/>
 	
 </BaseLayout>

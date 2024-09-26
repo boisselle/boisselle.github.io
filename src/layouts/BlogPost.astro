@@ -1,0 +1,21 @@
+---
+// this file is not currently in use, but could
+// be used to create a blog post template.
+
+import BaseLayout from './BaseLayout.astro';
+import '../styles/global.css';
+
+const { frontmatter } = Astro.props;
+
+
+// Conditionally import the CSS
+if (frontmatter.useCustomCSS) {
+  import('../styles/custom.css');
+}
+---
+<BaseLayout pageTitle={frontmatter.title}>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    <slot />
+  </article>
+</BaseLayout>
