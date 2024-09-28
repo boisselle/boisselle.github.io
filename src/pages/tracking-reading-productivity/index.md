@@ -1,13 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
-title: 'My First Blog Post'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+title: 'Roadmap'
+
 ---
 [[back to blog]](/)
 # Toward Specifications for Tracking Reading Productivity
@@ -15,7 +9,6 @@ tags: ["astro", "blogging", "learning in public"]
 Published on: September 22, 2024
 
 I've been thinking lately about how to improve my reading speed and comprehension. I feel the constant need to optimize my learning. To that end, I'm working to map out and design a system for reading that will help me stay productive and maximize my learning efficiency. 
-
 
 At minimum, the productivity tracking system should include:
 
