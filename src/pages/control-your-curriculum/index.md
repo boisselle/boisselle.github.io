@@ -12,21 +12,21 @@ Compare the rigid list of learning materials in a college course with that of th
 
 The good news is that we can apply the university model to anything we wish to learn or practice. To make progress, it is essential that we curate our own content. This is the foundation for auto-didacticism.
 
-# 4 Ways to Curate Our Content
+## 4 Ways to Curate Our Content
 
-## Syllabi
+### Syllabi
 
 Looking at university syllabi is one of the most effective ways of developing your own curriculum. Most syllabi are available for free by just looking up the course number for a given university course.
 
-## Prefer Depth
+### Prefer Depth
 
 Most books are written for the average reader and the mildly curious. They are not written for the exceptional or the obsessed. To go deep on a topic, commit to reading difficult material. Have a preference for textbooks, academic journals, and other rigorous materials.
 
-## Look to Your Heroes
+### Look to Your Heroes
 
 Create lists of the people in the field you admire. Build your own database of knowledge. If you are learning art or design, look through the works of Van Gogh or Paul Rand and analyze them. If you are learning programming, go through some codebases of great programmers like John Carmack or Linus Torvalds. Create a shrine if you must.
 
-## Be a Builder
+### Be a Builder
 
 Social algorithms encourage us to be passive consumers first and producers second. We have to flip that around with intention by creating project milestones for ourselves. Otherwise we slip backwards into the pool of slop that leads to the destruction of our potential.
 
