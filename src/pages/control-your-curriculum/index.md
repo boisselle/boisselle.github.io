@@ -12,7 +12,7 @@ Compare the rigid list of learning materials in a college course with that of th
 
 The good news is that we can apply the university model to anything we wish to learn or practice. To make progress, it is essential that we curate our own content. This is the foundation for auto-didacticism.
 
-## 4 Ways to Curate Our Content
+## 4 Ways to Curate Your Content
 
 ### Syllabi
 
