@@ -8,7 +8,11 @@ title: '5 Reasons Why Blender Is the Ultimate Design Tool of the Future'
 
 Once viewed merely as a hobbyist tool, Blender has evolved into a serious competitor among professional creative suites. Most recently it made waves for being the primary tool used to create the film Flow, which won the 2025 Academy Award for Best Animated Feature. While big studios are entrenched in legacy workflows, this tool has become a rising star among independent creators and smaller agencies.
 
-I believe that the current 2D-centric content format of the web will be subsumed by immersive and gamified experiences. *Imagine the Internet, but everything is a game.* The real potential for Blender in the coming years will stem from the rise of the spatial web and the use of machine learning tools that allow us to generate, manipulate and upscale 3D meshes and environments.
+I believe that the current 2D-centric content format of the web will be largely subsumed by immersive and gamified experiences. 
+
+*Imagine the Internet, but everything is a game.* 
+
+The real potential for Blender in the coming years will stem from the rise of the spatial web and the use of machine learning tools that allow us to generate, manipulate and upscale 3D meshes and environments.
 
 Here is my evolving thesis on why Blender is the design tool of the future and why every designer needs to become familiar with 3D design.
 
