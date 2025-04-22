@@ -16,7 +16,7 @@ The real potential for Blender in the coming years will stem from the rise of th
 
 Here is my evolving thesis on why Blender is the design tool of the future and why every designer needs to become familiar with 3D design.
 
-## It’s Free and Open Source. 
+## It’s Free and Open Source
 
 The major 3D modeling and visual effects software packages currently used in industry are locked behind sizable paywalls. At the time of this writing, both Autodesk Maya and 3ds Max charge an annual fee of $1,945 per year or $245 per month for a single user. Foundry’s compositing powerhouse Nuke sits at $3,649 per year as the lowest price offering for a single-user, full-version professional license.
 
